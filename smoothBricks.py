@@ -170,6 +170,7 @@ def fixMontageHeaders(infile,outfile,axes):
 #
 # -----------------------------------------------------------
 
+# tar -xzvf example_fits.tar.gz
 
 # Grab a list of FITS files, e.g. model outputs from wsclean
 chan_list = sorted(glob.glob('myimg_chan-0*.fits'))
@@ -177,6 +178,8 @@ chan_list = sorted(glob.glob('myimg_chan-0*.fits'))
 directions = [(336.821884,-42.122744),(335.305521,-43.464774),(328.396897,-44.544670),(335.550094,-47.906527)]
 # And a corresponding list of FWHMs (degrees), thumbnails are twice this size
 fwhms = [0.5,1.0,0.8,2.0]
+
+# This example lets one of the Gaussians run over the edge of the image. It works, but might not be wise.
 
 for infits in chan_list:
 	# Change the line below to adjust the output filename
