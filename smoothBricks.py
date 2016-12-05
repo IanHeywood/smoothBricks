@@ -8,7 +8,7 @@
 # from the subimage bricks. The tapering is supposed to make everything
 # nice and smooth.
 #
-# Needs an intallation of Montage as mSubimage is called from the command
+# Needs an installation of Montage as mSubimage is called from the command
 # line.
 #
 # ian.heywood@csiro.au 05.12.16
