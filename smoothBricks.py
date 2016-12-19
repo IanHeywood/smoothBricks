@@ -72,7 +72,7 @@ def flushFits(newimage,fitsfile):
 
 def makeCheckerboard(infits,outfits,N):
 	# Duplicate infits into outfits and replace the data
-	# with a N/N checkerboard pattern
+	# with a N*N checkerboard pattern
 	# imsizes that don't divide cleanly by N will probably fail
 	inp_img = getImage(infits)
 	nr = inp_img.shape[0]
